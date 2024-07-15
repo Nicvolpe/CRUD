@@ -41,6 +41,10 @@
                                     <td>{{usuario.usuario}}</td>
                                     <td>{{usuario.clave}}</td>
                                     <td>{{usuario.rol}}</td>
+                                    <td>
+                    			        <a class="btn btn-primary" :href="'usuario_update.html?id='+ usuario.id" > Editar </a>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(usuario.id)" >Eliminar</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
