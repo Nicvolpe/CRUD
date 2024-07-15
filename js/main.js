@@ -35,7 +35,9 @@ document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-s
 `
 
 if (sessionStorage.getItem("adm")!="1"){
-    document.querySelector("#crud").setAttribute('style', 'display:none')
+  document.querySelector("#dropdownId").setAttribute('style', 'display:none')
+  //  document.querySelector("#crud").setAttribute('style', 'display:none')
 }else{
-    document.querySelector("#crud").setAttribute('style', 'display:on')
+  document.querySelector("#dropdownId").setAttribute('style', 'display:on')
+  //  document.querySelector("#crud").setAttribute('style', 'display:on')
 }
