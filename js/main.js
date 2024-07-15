@@ -16,14 +16,12 @@ document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-s
                   <a class="dropdown-item" href="productos.html">Productos</a>
                   <a class="dropdown-item" href="usuarios.html">Usuarios</a>
               </div>
-          </li>
-                    <li class="nav-item">
-              <a class="nav-link" href="login.html">Log in</a>
-          </li>
-          </li>
-                    <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registro</a>
-          </li>
+          <li class="nav-item dropdown" id="Ingreso">  
+            <a class="nav-link dropdown-toggle" href="menuadmin" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingreso</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="login.html">Log in</a>
+                  <a class="dropdown-item" href="registro.html">Registro</a>
+              </div>
       </ul>
       <form class="d-flex my-2 my-lg-0">
           <input class="form-control me-sm-2" type="text" placeholder="Search">

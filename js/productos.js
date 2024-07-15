@@ -71,7 +71,7 @@ const { createApp } = Vue
         }
     },
 
-
+/*
  async comprar(id) {
         const url = this.url + '/' + id;
         await fetch(url)
@@ -79,9 +79,9 @@ const { createApp } = Vue
             .then(data => {
                 this.id = data.id;
                 this.nombre = data.nombre;
+                this.tipo = data.tipo; 
                 this.imagen = data.imagen;
                 this.stock = data.stock;
-                this.tipo = data.tipo; 
                 this.precio = data.precio;
             })
             .catch(err => {
@@ -114,7 +114,8 @@ const { createApp } = Vue
                 alert("Error al realizar la compra");
             });
     }
-}
+
+*/
     created() {
         this.fetchData(this.url)
     },

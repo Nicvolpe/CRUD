@@ -6,7 +6,7 @@ const { createApp } = Vue
     data() {
       return {
         id:0,
-        nombre:"",
+        usuario:"",
         clave:"",
         rol:0,
        url:'http://NicoV.pythonanywhere.com/usuarios/'+id,
@@ -20,7 +20,7 @@ const { createApp } = Vue
                 .then(data => {
                     console.log(data)
                     this.id=data.id
-                    this.nombre = data.nombre;
+                    this.usuario = data.usuario;
                     this.clave=data.clave
                     this.rol=data.rol
                 })
@@ -31,7 +31,7 @@ const { createApp } = Vue
         },
         modificar() {
             let usuario = {
-                nombre:this.nombre,
+                usuario:this.usuario,
                 clave: this.clave,
                 rol: this.rol,
             }

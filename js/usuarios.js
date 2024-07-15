@@ -9,8 +9,8 @@ createApp({
             cargando: true,
             /*alta*/
             id: 0,
-            usuario: "Introduzca un usuario",
-            clave: "Introduzca una contraseña",
+            usuario: "admin",
+            clave: "admin",
             rol:1,
         }
     },
@@ -39,12 +39,12 @@ createApp({
                 .then(res => {
                     location.reload();
                 })
-        },*/
+        },
         grabar() {
             let usuario = {
                 usuario: this.usuario,
                 clave: this.clave,
-                rol:0
+                rol:this.rol
             }
             var options = {
                 body: JSON.stringify(usuario),
@@ -55,7 +55,7 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./usuarios.html";
+                    window.location.href = "./index.html";
                 })
                 .catch(err => {
                     console.error(err);
@@ -83,7 +83,7 @@ createApp({
                       console.error(err);
                       alert("Error al Modificar")
                   })      
-          },*/
+          },
         
         login() {
             usuario=this.usuario
