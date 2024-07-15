@@ -10,7 +10,7 @@ document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-s
           <li class="nav-item">
               <a class="nav-link active" href="index.html" aria-current="page"> Home <span class="visually-hidden">(current)</span></a>
           </li>          
-          <li class="nav-item dropdown">  
+          <li class="nav-item dropdown" id="CRUD">  
             <a class="nav-link dropdown-toggle" href="menuadmin" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="productos.html">Productos</a>
@@ -35,9 +35,9 @@ document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-s
 `
 
 if (sessionStorage.getItem("adm")!="1"){
-  document.querySelector("#dropdownId").setAttribute('style', 'display:none')
+  document.querySelector("#CRUD").setAttribute('style', 'display:none')
   //  document.querySelector("#crud").setAttribute('style', 'display:none')
 }else{
-  document.querySelector("#dropdownId").setAttribute('style', 'display:on')
+  document.querySelector("#CRUD").setAttribute('style', 'display:on')
   //  document.querySelector("#crud").setAttribute('style', 'display:on')
 }
