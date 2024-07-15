@@ -72,7 +72,7 @@ const { createApp } = Vue
     },
 
 
-/*    comprar(id) {
+ async comprar(id) {
         const url = this.url + '/' + id;
         await fetch(url)
             .then(response => response.json())
@@ -114,7 +114,7 @@ const { createApp } = Vue
                 alert("Error al realizar la compra");
             });
     }
-*/
+}
     created() {
         this.fetchData(this.url)
     },
