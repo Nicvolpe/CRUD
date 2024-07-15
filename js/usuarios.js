@@ -55,11 +55,11 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./index.html";
+                    window.location.href = "./usuarios.html";
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Grabarr")
+                    alert("Error al Grabar")
                 })
         },
         modificar() {
