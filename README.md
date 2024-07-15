@@ -1,2 +1,2 @@
-Probar el Formulario Usuarios, Modificar y Eliminar
-revisar que el Usuario_update funcione bien
+1. Probar el Formulario Usuarios, botones Modificar y Eliminar.
+2. Revisar que el Usuario_update funcione bien.
