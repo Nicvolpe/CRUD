@@ -23,7 +23,11 @@
         <div class="mb-3">
           <label for="clave">Clave</label>
           <input type="text" name="clave" id="clave" v-model="clave">
-        </div>        
+        </div>
+        <div class="mb-3">
+          <label for="rol">Rol</label>
+          <input type="number" name="rol" id="rol" v-model="rol">
+        </div>     
         <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
       </form>
     </div>
